@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ET 1982</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+
+</head>
+<body onload="logado()">
+
+    <div class="container-fluid mt-5 justify-content-center">
+
+
+
+        <div class="row cor">
+            <div class="col-sm-1">
+                <h5>Bem Vindo: </h5>
+            </div>
+
+            <div class="col-sm-1">
+                <h5 id="user"></h5>
+            </div>
+
+        </div>
+
+
+        <div class="row cor text-center">
+
+
+
+            <h1>Nova Locadora</h1>
+
+        </div>
+        <div class="row cor justify-content-center">
+
+            <h3 style="text-align: center;">Lançamentos</h3>
+
+            <div class="glide mt-3">
+                <div class="glide__track sm-3 col-xs-12" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide" style="text-align: center;"><img src="Jaws19751.jpg" alt="" srcset=""
+                                style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="Joker20191.jpg" alt="" srcset=""
+                                style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="MummyReturns20011.jpg" alt=""
+                                srcset="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="PulpFiction19941.jpg" alt=""
+                                srcset="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="SlenderMan20181.jpg" alt=""
+                                srcset="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="StarWars19771.jpg" alt=""
+                                srcset="" style="width: 100%; height: 100%;"></li>
+
+                    </ul>
+                </div>
+                <div class="glide__arrows sm-3 col-xs-12" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+            const config = {
+                type: 'carousel',
+                perView: 6,
+                breakpoints: {
+                    800: {
+                        perView: 3
+                    }
+                },
+
+                autoplay: 3000,
+            };
+            new Glide(".glide", config).mount();
+        </script>
+
+        <div class="row cor text-center">
+
+            <h1>ET 1982</h1>
+
+        </div>
+
+        <div class="row cor p-1 justify-content-center">
+
+            <div class="col-sm-6 justify-content-center card" id="card1">
+
+                <img src="ET1982.jpg" alt="" class="img-fluid" id="img1">
+
+            </div>
+
+            <div class="col-sm-6 p-1" style="text-align: justify;">
+
+                
+               
+                    
+                <h3 style="padding-top: 25%;">O garoto Elliott faz amizade com um pequeno alienígena inofensivo que está bem longe do seu planeta. Ele decide manter a adorável criatura em segredo e em casa após apresentá-la aos irmãos. </h3>
+                
+               
+                
+               
+                
+                <h3 style="padding-top: 10%;">
+                    <p class="card-text" id="preço">R$6,99 </p>
+                </h3>
+
+            </div>
+
+
+        </div>
+
+        <div class="row justify-content-center mt-4">
+
+          
+            <h1>Trailler:</h1>
+            <div class="col-6" style="min-width: 315px; min-height: 250px; height: 520px; width: 720px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qYAETtIIClk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+           
+
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+    <div class="row p-3 justify-content-center">
+
+        <div class="col-sm-2 p-3">
+
+            <h5>Quantidade:</h5>
+
+            <input type="number" name="qtd" id="qtd" class="qtd" style="width: 80px;">
+
+
+
+
+        </div>
+
+        <div class="col-sm-2 p-3">
+
+            <button type="button" class="btn btn-primary"onclick="adicionarcarrinho6()">Adicionar no carrinho</button>
+
+        </div>
+
+        <h1><a href="home.html"><button type="button" class="btn btn-primary">Voltar ao catalago de filmes</button></a></h1>
+
+    </div>
+
+
+
+
+</body>
+
+<script src="javascript.js"></script>
+<script src="zoom.js"></script>
+<script src="carrinho.js"></script>
+    
+</body>
+</html>

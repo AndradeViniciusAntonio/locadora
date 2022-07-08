@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndereçoViaCEP</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <!-- <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css"> -->
+</head>
+<body onload="logado()">
+
+
+    <h1><a href="home.html"><button type="button" class="btn btn-primary">Voltar ao catalago de filmes</button></a></h1>
+
+    <div class="container p-5 bg-info mt-5">
+
+        
+
+        <h1>Consultando CEP</h1>
+        <form>
+
+            <div class="form-group">
+
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <small>00000-000</small>
+
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+                <small>Rua.</small>
+
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+                <small>Bairro</small>
+
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+                <small>Cidade</small>
+
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf">
+                <small>Estado</small>
+
+
+            </div>
+
+
+        </form>
+
+
+
+
+
+    </div>
+
+    <footer>
+
+        <h3 style="text-align: center;" class="display-10 btn-outline-danger">Nova Locadora</h3>
+        
+    </footer>
+    
+</body>
+<script src="maincep.js"></script>
+</html>

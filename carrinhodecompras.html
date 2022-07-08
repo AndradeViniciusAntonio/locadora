@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker2019</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css"> -->
+
+</head>
+
+<body onload="getCart();contador()">
+
+    <div class="container-fluid mt-5 justify-content-center p-5 m-auto">
+
+
+        <h1 style="margin-top: auto;"><a href="home.html"><button type="button" class="btn btn-primary">Voltar ao catalago de filmes</button></a>
+        </h1>
+
+        <div class="row">
+
+            <div class="col-sm-1">
+      
+              <p id="tempo"></p>
+      
+        </div>
+
+
+        <div class="row cor justify-content-center mt-5">
+
+            <div class="col-12" style="text-align: center;">
+
+                <h1 style="margin-top: 5%;">Carrinho de compras</h1>
+
+            </div>
+
+            <div class="col-sm-4 p-1 justify-content-center">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"  id="rbavista" onclick="if(document.getElementById('avista').disabled==true){document.getElementById('avista').disabled=true;document.getElementById('card').disabled=true} 
+                    else
+                    {document.getElementById('avista').disabled=true;document.getElementById('card').disabled=false}">
+                    <label class="form-check-label" for="rbcartaoCredito">À vista</label>
+                    <!-- <h1 style="text-align: center">À vista</h1> -->
+                    <input type="text" class="form-control" id="avista" style="width: 200px;" disabled>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rbcard" onclick="if(document.getElementById('card').disabled==true){document.getElementById('card').disabled=false;document.getElementById('avista').disabled=true} 
+                else
+                {document.getElementById('avista').disabled=true;document.getElementById('card').disabled=true}">
+                <!-- <h1 style="text-align: center">À prazo</h1> -->
+                <label for="">Parcelas</label>
+                <input type="number" name="" id="parcela" class="form-control" style="width: 200px;" min="1" max="4" >
+                <input type="text" name="" id="card" class="form-control" style="width: 200px;" disabled>
+
+            </div>
+
+            <div class="col-sm-6 p-4 align-content-center">
+
+                <h1><a href="parabens.html" type="button" class="btn btn-primary">Finalizar compra</button></a></h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="carrinho.js"></script>
+<script src="timeout.js"></script>
+
+</html>

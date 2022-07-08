@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ProjetoLocadora</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="glide.core.min.css">
+  <link rel="stylesheet" href="glide.theme.min.css">
+</head>
+
+<body onload="logado();contador()">
+
+  <div class="container-fluid bg-light mt-5 justify-content-center">
+
+
+
+    <div class="row cor">
+      <div class="col-sm-1">
+        <h5>Bem Vindo!  : </h5>
+      </div>
+
+      <div class="col-sm-1">
+        <h5 id="user"></h5>
+      </div>
+
+    </div>
+
+    <div class="row cor">
+
+      <div class="col-sm-1">
+
+        <p id="tempo"></p>
+
+      </div>
+
+    </div>
+
+
+    <div class="row cor text-center">
+
+
+      <h1>Nova Locadora</h1>
+
+      <div>
+        <div class="row cor justify-content-center">
+
+          <h3 style="text-align: center;">Lançamentos</h3>
+
+          <div class="glide mt-3">
+            <div class="glide__track sm-3 col-xs-12" data-glide-el="track">
+              <ul class="glide__slides">
+                  <li class="glide__slide" style="text-align: center;"><img src="Jaws19751.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+                  <li class="glide__slide" style="text-align: center;"><img src="Joker20191.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+                  <li class="glide__slide" style="text-align: center;"><img src="MummyReturns20011.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+                  <li class="glide__slide" style="text-align: center;"><img src="PulpFiction19941.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+                  <li class="glide__slide" style="text-align: center;"><img src="SlenderMan20181.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+                 <li class="glide__slide" style="text-align: center;"><img src="StarWars19771.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+
+              </ul>
+            </div>
+            <div class="glide__arrows sm-3 col-xs-12" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script>
+          const config = {
+            type: 'carousel',
+            perView: 6,
+            breakpoints: {
+              800: {
+                perView: 3
+              }
+            },
+
+            autoplay: 3000,
+          };
+          new Glide(".glide", config).mount();
+        </script>
+
+        <div class="row cor text-center">
+
+          <h1>Catalago de Filmes</h1>
+
+        </div>
+
+      </div>
+
+
+      <div class="row   mt-5 justify-content-center">
+
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Alien1979.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Alien (1979)</h5>
+              <p class="card-text"> Uma nave espacial, ao retornar para... </p>
+              <p class="card-text"> R$ 9,99 </p>
+              <a href="alien1979.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="AntMan2015.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Ant-Man (2015)</h5>
+              <p class="card-text"> Dr. Hank Pym transforma um talentos...</p>
+              <p class="card-text"> R$ 11,99 </p>
+              <a href="antman2015.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Aquaman2018.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Aquaman (2018)</h5>
+              <p class="card-text"> A cidade de Atlantis,que já foi lar ...</p>
+              <p class="card-text"> R$ 8,99 </p>
+              <a href="Aquaman2018.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="BacktotheFuture.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">BackToTheFuture ()</h5>
+              <p class="card-text"> Marty McFly, um adolescente ...</p>
+              <p class="card-text"> R$ 13,99 </p>
+              <a href="BacktotheFuture.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Brood1979.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Brood (1979)</h5>
+              <p class="card-text"> Um homem tenta descobrir ...</p>
+              <p class="card-text"> R$ 14,99</p>
+              <a href="Brood1979.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="ET1982.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">ET (1982)</h5>
+              <p class="card-text"> O garoto Elliott faz amizade com ...</p>
+              <p class="card-text"> R$ 6,99 </p>
+              <a href="ET1982.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row mt-5 justify-content-center">
+
+        <div class="col  mb-3 p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="FightClub1999.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Fight Club (1999)</h5>
+              <p class="card-text"> Um homem deprimido que sofre ...</p>
+              <p class="card-text"> R$ 15,99 </p>
+              <a href="FightClub1999.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col  justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Halo2022.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Halo (2022)</h5>
+              <p class="card-text"> Em Halo, uma épica batalha acontece ...</p>
+              <p class="card-text"> R$ 17,99 </p>
+              <a href="Halo2022.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col  justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Jaws1975.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Jaws (1975)</h5>
+              <p class="card-text"> Um terrível ataque a banhistas é o sinal ...</p>
+              <p class="card-text"> R$ 19,99 </p>
+              <a href="Jaws1975.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col  justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Joker2019.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Joker (2019)</h5>
+              <p class="card-text"> Isolado, intimidado e desconsiderado ...</p>
+              <p class="card-text"> R$ 21,99 </p>
+              <a href="Joker%202019.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col  justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="JurassicWorld.Park2022.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Jurassic World(2022)</h5>
+              <p class="card-text"> A sequência do filme Jurassic World ...</p>
+              <p class="card-text"> R$ 15,99 </p>
+              <a href="JurassicWorld 2022.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-around p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="MummyReturns2001.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Mummy Returns (2001)</h5>
+              <p class="card-text"> Rick e Evelyn O'Connell estão morando...</p>
+              <p class="card-text"> R$ 13,99 </p>
+              <a href="MummyReturns2001.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="row mt-5 justify-content-center justify-content-around">
+
+        <div class="col  justify-content-center p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="PulpFiction1994.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Pulp Fiction (1994)</h5>
+              <p class="card-text"> Assassino que trabalha para a máfia...</p>
+              <p class="card-text"> R$ 29,99 </p>
+              <a href="PulpFiction1994.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col  justify-content-center p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="Scream2022.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Scream (2022)</h5>
+              <p class="card-text"> Vinte e cinco anos após uma série de crimes...</p>
+              <p class="card-text"> R$ 22,99 </p>
+              <a href="Scream2022.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-center p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="SlenderMan2018.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Slender Man (2018)</h5>
+              <p class="card-text"> As amigas Wren, Hallie, Chloe e Katie levam uma...</p>
+              <p class="card-text"> R$ 27,99 </p>
+              <a href="SlenderMan2018.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-center p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="StarWars1977.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">Star Wars (1977)</h5>
+              <p class="card-text"> A princesa Leia é mantida refém...</p>
+              <p class="card-text"> R$ 18,99 </p>
+              <a href="StarWars1977.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col justify-content-center p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="TheAvengers2012.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">The Avengers (2012)</h5>
+              <p class="card-text"> Loki, o irmão de Thor, ganha acesso...</p>
+              <p class="card-text"> R$ 24,99</p>
+              <a href="TheAverngers2012.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col justify-content-center p-5">
+
+          <div class="card" style="width: 100%; height: 100%;">
+            <img src="TheGoonies1985.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 100%; height: 100%;">
+              <h5 class="card-title">The Goonies (1985)</h5>
+              <p class="card-text"> Os Goonies encontram um misterioso mapa...</p>
+              <p class="card-text"> R$ 39,99 </p>
+              <a href="TheGoonies1985.html">
+                <button type="button" class="btn btn-primary">Sinopse</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="row cor   justify-content-center">
+
+        <div class="col-sm-4 justify-content-center  p-1">
+
+          
+          <a href="carrinhodecompras.html"><button type="button" class="btn btn-primary">Finalizar compra</button></a>
+
+        </div>
+
+        <div class="col-sm-4 justify-content-center  p-1">
+
+          <a href="endereco.html">
+            <button type="button" class="btn btn-primary">Endereço</button></a>
+
+        </div>
+
+        <div class="col-sm-4 justify-content-center  p-1">
+
+
+          <a href="faleconosco.html">
+            <button type="button" class="btn btn-primary">Fale Conosco</button></a>
+
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+</body>
+
+<script src="javascript.js"></script>
+<script src="timeout.js"></script>
+
+</html>

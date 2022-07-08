@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="biblioteca/estilo.css">
+    <link rel="stylesheet" href="biblioteca/glide.core.min.css">
+    <link rel="stylesheet" href="biblioteca/glide.theme.min.css">
+    <link rel="stylesheet" href="biblioteca/bootstrap.min.css">
+    
+    <title>carrousel.js</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        
+
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides"  >
+
+                    <li class="glide__slide" style="text-align: center;"><img src="carrousel/Jaws1975.jpg" alt="" srcset="" style="width: 100%; height: 100%;"></li>
+                    <li class="glide__slide" style="text-align: center;"><img src="carrousel/Joker2019.jpg" alt="" srcset=""style="width: 100%; height: 100%;"></li>
+                    <li class="glide__slide"style="text-align: center;"><img src="carrousel/MummyReturns2001.jpg" alt="" srcset=""style="width: 100%; height: 100%;"></li>
+                    <li class="glide__slide"style="text-align: center;"><img src="carrousel/PulpFiction1994.jpg" alt="" srcset=""style="width: 100%; height: 100%;"></li>
+                    <li class="glide__slide"style="text-align: center;"><img src="carrousel/SlenderMan2018.jpg" alt="" srcset=""style="width: 100%; height: 100%;"></li>
+                    <li class="glide__slide"style="text-align: center;"><img src="carrousel/StarWars1977.jpg" alt="" srcset=""style="width: 100%; height: 100%;"></li>
+
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 6,
+            breakpoints: {
+                800: {
+                    perView: 3
+                }
+            },
+
+            autoplay: 2000,
+        };
+        new Glide(".glide", config).mount();
+    </script>
+
+
+
+
+</body>
+
+</html>

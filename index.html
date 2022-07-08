@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de LOGIN</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="javascript.js"></script>
+    <script src="carrinho.js"></script>
+
+
+</head>
+
+<body onload="session()">
+
+
+
+    <div class="container-fluid bg-light mt-5 justify-content-center m-auto p-5">
+
+        <div class="row cor  justify-content-center">
+
+            <h1 style="text-align: center;">Tela de Login</h1>
+
+            <div class="col-auto p-5">
+
+
+                <label for="uname"><b>Usuário</b></label>
+                <input type="text" placeholder="Digite o usuário" name="uname" required id="1">
+
+            </div>
+
+
+            <div class="col-auto p-5">
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Digite a senha" name="psw" required id="2">
+
+                
+
+
+            </div>
+
+            <div class="row justify-content-center p-5">
+
+                <div class="col-auto justify-content-center">
+
+                    <input type="button" value="Login" onclick="loginUsuario()">
+
+                </div>
+
+                
+
+            </div>
+
+            <footer>
+
+                <h3 style="text-align: center;" class="display-10 btn-outline-danger">Nova Locadora</h3>
+                
+            </footer>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
